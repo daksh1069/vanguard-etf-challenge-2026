@@ -1,0 +1,22 @@
+{
+  "v": 5,
+  "createdOnFiles": {"v": 1, "at": "2026-11-12T18:00:00Z"},
+  "lists": "css",
+  "format": {"v": 1, "shared": ["project/deck.css"]},
+  "title": "WolfPack Finals Pitch",
+  "cover": "cover",
+  "order": ["cover", "hook", "gap", "product", "how", "who", "method", "growth", "stress", "hedge", "now", "liquidity", "precedent", "risks", "close", "b-years", "b-stress", "b-model", "b-slope", "b-assumptions", "b-whynot"],
+  "sections": {
+    "s1": {"description": "Opening: the 2022 problem and the empty cell in the US lineup", "start": "cover"},
+    "s2": {"description": "The product, how the hedge works and who it serves", "start": "product"},
+    "s3": {"description": "Evidence rebuilt from real market prices, in calm and stressed markets", "start": "method"},
+    "s4": {"description": "Why now, liquidity and scale, and Vanguard’s own precedent", "start": "now"},
+    "s5": {"description": "The risks in our own words, and the close", "start": "risks"},
+    "s6": {"description": "Backup slides for the Q&A", "start": "b-years"}
+  },
+  "faces": {
+    "source-serif-4": {"family": "Source Serif 4", "href": "https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&display=swap"},
+    "inter": {"family": "Inter", "href": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"}
+  },
+  "designSystems": []
+}

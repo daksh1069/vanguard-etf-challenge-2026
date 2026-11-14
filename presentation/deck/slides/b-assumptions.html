@@ -1,0 +1,24 @@
+<section id="b-assumptions" class="backup">
+<p class="eyebrow">Backup · Q&amp;A</p>
+<h2 class="title">Assumptions behind the rebuild</h2>
+<div class="body stack">
+<table class="t">
+<tr class="thead"><th style="width:6%">#</th><th style="width:50%">Assumption</th><th style="width:44%">Effect, and how we tested it</th></tr>
+<tr><td>A1</td><td>ISHG’s returns stand in for the index’s bond returns</td><td>Includes ISHG’s trading costs; fee swapped 0.35% → 0.10%</td></tr>
+<tr><td>A2</td><td>Currency weights fixed at ISHG’s November 2026 mix</td><td>Affects only the hedge; a likely reason our volatility runs a little high</td></tr>
+<tr><td>A3</td><td>Korean won left out of the main case</td><td>Including it: +0.07% a year, slightly lower volatility</td></tr>
+<tr><td>A4</td><td>Majors hedged at month-end mid forwards, no roll cost</td><td>A few bp a year in calm markets</td></tr>
+<tr><td>A5</td><td>Small currencies: carry from rate gaps; Singapore at zero</td><td>Ignores their basis; zero SGD carry slightly understates return</td></tr>
+<tr><td>A6</td><td>Monthly data only</td><td>Monthly drawdowns understate daily ones</td></tr>
+<tr><td>A7</td><td>No taxes, securities lending or tracking error</td><td>See the risks slide on state tax</td></tr>
+</table>
+</div>
+<div class="foot"><p class="src">Full list (A1–A10, L1–L12): docs/WolfPack_Idea1_Final_Review.pdf, sections 5 and 6</p><p class="pg"></p></div>
+<aside>Backup. Use if asked what we assumed to build the series.
+
+The biggest one is A1: ISHG’s real returns stand in for the index. That’s conservative, because ISHG’s returns already include its trading costs, and we only swap its 0.35% fee for our 0.10%.
+
+A2: we hold today’s currency mix constant for the whole history. That only affects the hedge, and a mismatch would leave a little currency unhedged, which is probably why our volatility is slightly high.
+
+A3: the main case leaves out the Korean won because Korea only joined the index this year; including it adds 0.07% a year.</aside>
+</section>

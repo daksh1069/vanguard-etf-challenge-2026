@@ -1,0 +1,41 @@
+<section id="how">
+<p class="eyebrow">How it works</p>
+<h2 class="title">A bond fund with a monthly currency hedge</h2>
+<div class="body stack">
+<!-- nodes: S1 0,0,368,210  S2 432,0,368,210  S3 864,0,368,210  S4 1296,0,368,210 ; loop strip y 250 -->
+<div style="position:relative; width:1664px; height:300px">
+<div class="node" style="left:0px; top:0px; width:368px; height:210px"><p class="nt">1. You buy in USD</p><p class="nx">A US-listed ETF share, priced in dollars.</p></div>
+<div class="node" style="left:432px; top:0px; width:368px; height:210px"><p class="nt">2. Fund buys bonds</p><p class="nx">About 190 short government bonds in 12 currencies.</p></div>
+<div class="node key" style="left:864px; top:0px; width:368px; height:210px"><p class="nt">3. Sells FX forward</p><p class="nx">1-month forwards lock in today’s rate on 100% of the foreign value.</p></div>
+<div class="node key" style="left:1296px; top:0px; width:368px; height:210px"><p class="nt">4. Monthly reset</p><p class="nx">Forwards settle in cash and roll to match the new holdings.</p></div>
+<x-connector x1="368" y1="105" x2="432" y2="105" style="color:#14202E; border-width:3px"></x-connector>
+<x-connector x1="800" y1="105" x2="864" y2="105" style="color:#14202E; border-width:3px"></x-connector>
+<x-connector x1="1232" y1="105" x2="1296" y2="105" style="color:#1F5FA8; border-width:3px"></x-connector>
+<x-connector x1="1480" y1="210" x2="1480" y2="250" head="none" style="color:#1F5FA8; border-width:3px"></x-connector>
+<x-connector x1="1480" y1="250" x2="1048" y2="250" head="none" style="color:#1F5FA8; border-width:3px"></x-connector>
+<x-connector x1="1048" y1="250" x2="1048" y2="210" style="color:#1F5FA8; border-width:3px"></x-connector>
+<p class="looplabel" style="left:1094px; top:262px; width:340px; height:34px">Repeats every month</p>
+</div>
+<div class="eq">
+<p class="label">What the investor earns, roughly</p>
+<p class="eqline">Foreign short-bond return + hedge carry − 0.10% fee</p>
+<p class="txt">Hedge carry ≈ US short rate − foreign short rate, plus the cross-currency basis. The currency move itself cancels out.</p>
+</div>
+</div>
+<div class="foot"><p class="src">Same mechanism Vanguard uses for BNDX. Fee: our proposal</p><p class="pg"></p></div>
+<aside>About 65 seconds.
+
+How it works, in four steps.
+
+One: you buy a normal US-listed ETF share, in dollars.
+
+Two: the fund buys about 190 short government bonds in twelve currencies.
+
+Three, the key step: it sells those currencies one month forward, locking in today’s exchange rate on the whole foreign value.
+
+Four: at month end the forwards settle in cash, and the fund rolls into new ones that match its new holdings. Then it repeats.
+
+So if the euro falls 5%, the bonds lose 5% in dollar terms, and the forward gains about the same 5%. The currency move cancels.
+
+What’s left is at the bottom: the foreign short-bond return, plus the hedge carry, minus the fee. The hedge carry is roughly the US short rate minus the foreign short rate. When US rates are higher, as they’ve been for most of the last decade, hedging adds return instead of costing it.</aside>
+</section>

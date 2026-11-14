@@ -1,0 +1,75 @@
+severity,check,ticker,detail
+WARN,adj_reconcile,MGV,adj-vs-raw total return differs by 5.4 bp on 2020-03-26
+WARN,adj_reconcile,VDE,adj-vs-raw total return differs by 5.9 bp on 2022-09-28
+WARN,adj_reconcile,VNQI,adj-vs-raw total return differs by 6.6 bp on 2024-12-20
+WARN,adj_reconcile,VTV,adj-vs-raw total return differs by 5.7 bp on 2020-03-26
+WARN,insufficient_history,BNDP,208 obs (< 500); inception 2025-12-02 - proxy or exclude from covariance
+WARN,insufficient_history,VBIL,412 obs (< 500); inception 2025-02-07 - proxy or exclude from covariance
+WARN,insufficient_history,VCHY,84 obs (< 500); inception 2026-06-02 - proxy or exclude from covariance
+WARN,insufficient_history,VDG,118 obs (< 500); inception 2026-04-14 - proxy or exclude from covariance
+WARN,insufficient_history,VDIG,219 obs (< 500); inception 2025-11-14 - proxy or exclude from covariance
+WARN,insufficient_history,VDV,118 obs (< 500); inception 2026-04-14 - proxy or exclude from covariance
+WARN,insufficient_history,VEXC,252 obs (< 500); inception 2025-09-30 - proxy or exclude from covariance
+WARN,insufficient_history,VGHY,263 obs (< 500); inception 2025-09-16 - proxy or exclude from covariance
+WARN,insufficient_history,VGMS,330 obs (< 500); inception 2025-06-09 - proxy or exclude from covariance
+WARN,insufficient_history,VGUS,412 obs (< 500); inception 2025-02-07 - proxy or exclude from covariance
+WARN,insufficient_history,VGVT,312 obs (< 500); inception 2025-07-07 - proxy or exclude from covariance
+WARN,insufficient_history,VSDB,377 obs (< 500); inception 2025-04-01 - proxy or exclude from covariance
+WARN,insufficient_history,VTG,311 obs (< 500); inception 2025-07-07 - proxy or exclude from covariance
+WARN,insufficient_history,VTP,311 obs (< 500); inception 2025-07-07 - proxy or exclude from covariance
+WARN,insufficient_history,VUSG,219 obs (< 500); inception 2025-11-14 - proxy or exclude from covariance
+WARN,insufficient_history,VUSV,219 obs (< 500); inception 2025-11-14 - proxy or exclude from covariance
+WARN,real_yield,VTIP,publishes a REAL yield (2.29%); needs an inflation add-on before entering a nominal expected-return vector
+WARN,real_yield,VTP,publishes a REAL yield (2.50%); needs an inflation add-on before entering a nominal expected-return vector
+WARN,vendor_agreement,EDV,Yahoo 54.85 vs Vanguard 55.45 on 2026-10-01 (108 bp)
+WARN,vendor_agreement,IVOG,Yahoo 138.23 vs Vanguard 136.62 on 2026-10-01 (118 bp)
+WARN,vendor_agreement,IVOO,Yahoo 123.07 vs Vanguard 121.76 on 2026-10-01 (108 bp)
+WARN,vendor_agreement,IVOV,Yahoo 108.00 vs Vanguard 106.88 on 2026-10-01 (105 bp)
+WARN,vendor_agreement,VAW,Yahoo 217.68 vs Vanguard 218.17 on 2026-10-01 (22 bp)
+WARN,vendor_agreement,VB,Yahoo 286.56 vs Vanguard 284.49 on 2026-10-01 (73 bp)
+WARN,vendor_agreement,VBK,Yahoo 340.36 vs Vanguard 337.83 on 2026-10-01 (75 bp)
+WARN,vendor_agreement,VBR,Yahoo 232.48 vs Vanguard 231.03 on 2026-10-01 (63 bp)
+WARN,vendor_agreement,VCHY,Yahoo 72.44 vs Vanguard 72.79 on 2026-10-01 (48 bp)
+WARN,vendor_agreement,VDC,Yahoo 217.71 vs Vanguard 218.21 on 2026-10-01 (23 bp)
+WARN,vendor_agreement,VDE,Yahoo 175.58 vs Vanguard 172.16 on 2026-10-01 (199 bp)
+WARN,vendor_agreement,VDG,Yahoo 78.82 vs Vanguard 79.21 on 2026-10-01 (49 bp)
+WARN,vendor_agreement,VDIG,Yahoo 61.90 vs Vanguard 62.14 on 2026-10-01 (39 bp)
+WARN,vendor_agreement,VDV,Yahoo 75.61 vs Vanguard 76.14 on 2026-10-01 (70 bp)
+WARN,vendor_agreement,VEA,Yahoo 70.21 vs Vanguard 70.61 on 2026-10-01 (57 bp)
+WARN,vendor_agreement,VEU,Yahoo 82.48 vs Vanguard 82.97 on 2026-10-01 (59 bp)
+WARN,vendor_agreement,VEXC,Yahoo 94.79 vs Vanguard 95.21 on 2026-10-01 (45 bp)
+WARN,vendor_agreement,VFH,Yahoo 130.38 vs Vanguard 130.09 on 2026-10-01 (22 bp)
+WARN,vendor_agreement,VFMF,Yahoo 180.48 vs Vanguard 178.51 on 2026-10-01 (110 bp)
+WARN,vendor_agreement,VFMO,Yahoo 228.99 vs Vanguard 227.07 on 2026-10-01 (85 bp)
+WARN,vendor_agreement,VFMV,Yahoo 141.95 vs Vanguard 141.54 on 2026-10-01 (29 bp)
+WARN,vendor_agreement,VFQY,Yahoo 171.60 vs Vanguard 170.29 on 2026-10-01 (77 bp)
+WARN,vendor_agreement,VFVA,Yahoo 151.82 vs Vanguard 150.69 on 2026-10-01 (75 bp)
+WARN,vendor_agreement,VGHY,Yahoo 71.78 vs Vanguard 72.25 on 2026-10-01 (66 bp)
+WARN,vendor_agreement,VGK,Yahoo 85.49 vs Vanguard 86.80 on 2026-10-01 (151 bp)
+WARN,vendor_agreement,VGMS,Yahoo 49.33 vs Vanguard 49.52 on 2026-10-01 (38 bp)
+WARN,vendor_agreement,VGT,Yahoo 127.01 vs Vanguard 125.67 on 2026-10-01 (107 bp)
+WARN,vendor_agreement,VHT,Yahoo 311.72 vs Vanguard 316.08 on 2026-10-01 (138 bp)
+WARN,vendor_agreement,VIOG,Yahoo 138.51 vs Vanguard 137.95 on 2026-10-01 (41 bp)
+WARN,vendor_agreement,VIOO,Yahoo 127.39 vs Vanguard 126.52 on 2026-10-01 (69 bp)
+WARN,vendor_agreement,VIOV,Yahoo 110.93 vs Vanguard 110.00 on 2026-10-01 (85 bp)
+WARN,vendor_agreement,VIS,Yahoo 323.84 vs Vanguard 320.51 on 2026-10-01 (104 bp)
+WARN,vendor_agreement,VNQ,Yahoo 89.17 vs Vanguard 89.63 on 2026-10-01 (51 bp)
+WARN,vendor_agreement,VO,Yahoo 79.14 vs Vanguard 78.42 on 2026-10-01 (92 bp)
+WARN,vendor_agreement,VOE,Yahoo 197.30 vs Vanguard 195.53 on 2026-10-01 (91 bp)
+WARN,vendor_agreement,VOO,Yahoo 702.35 vs Vanguard 700.86 on 2026-10-01 (21 bp)
+WARN,vendor_agreement,VOOG,Yahoo 85.69 vs Vanguard 85.48 on 2026-10-01 (25 bp)
+WARN,vendor_agreement,VOT,Yahoo 294.94 vs Vanguard 292.10 on 2026-10-01 (97 bp)
+WARN,vendor_agreement,VOX,Yahoo 188.93 vs Vanguard 190.59 on 2026-10-01 (87 bp)
+WARN,vendor_agreement,VPL,Yahoo 116.27 vs Vanguard 115.81 on 2026-10-01 (40 bp)
+WARN,vendor_agreement,VPU,Yahoo 171.92 vs Vanguard 171.00 on 2026-10-01 (54 bp)
+WARN,vendor_agreement,VSDB,Yahoo 74.46 vs Vanguard 74.66 on 2026-10-01 (27 bp)
+WARN,vendor_agreement,VSGX,Yahoo 80.42 vs Vanguard 81.07 on 2026-10-01 (80 bp)
+WARN,vendor_agreement,VSS,Yahoo 154.10 vs Vanguard 155.25 on 2026-10-01 (74 bp)
+WARN,vendor_agreement,VTI,Yahoo 375.18 vs Vanguard 374.24 on 2026-10-01 (25 bp)
+WARN,vendor_agreement,VTP,Yahoo 72.36 vs Vanguard 73.18 on 2026-10-01 (112 bp)
+WARN,vendor_agreement,VTV,Yahoo 216.70 vs Vanguard 216.08 on 2026-10-01 (29 bp)
+WARN,vendor_agreement,VUSB,Yahoo 49.41 vs Vanguard 49.55 on 2026-10-01 (28 bp)
+WARN,vendor_agreement,VUSG,Yahoo 67.02 vs Vanguard 66.78 on 2026-10-01 (36 bp)
+WARN,vendor_agreement,VWO,Yahoo 59.03 vs Vanguard 59.31 on 2026-10-01 (47 bp)
+WARN,vendor_agreement,VXF,Yahoo 233.11 vs Vanguard 231.63 on 2026-10-01 (64 bp)
+INFO,yield_asof_spread,-,"SEC yield as-of dates: ['2026-08-31', '2026-09-30', '2026-10-01']"

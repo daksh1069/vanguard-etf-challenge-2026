@@ -1,0 +1,27 @@
+# Everything needed to run the library, the scripts and the tests. Python 3.11.
+# The vgdata package itself (src/vgdata) is installed in editable mode by the last line.
+
+# --- core numerics and estimation
+numpy
+pandas
+pyarrow                # parquet cache for the price panel
+scipy
+scikit-learn           # Ledoit-Wolf covariance shrinkage
+cvxpy                  # exact constrained max-Sharpe (Schaible transform)
+arch                   # stationary bootstrap
+
+# --- data acquisition
+requests               # Vanguard fund-detail feed
+yfinance               # prices and dividends
+pandas-datareader      # FRED (T-bill yields, OECD 3-month rates)
+openpyxl               # Excel workbooks (StockTrak exports, Bloomberg workbook)
+pyyaml
+
+# --- reporting
+matplotlib
+reportlab              # PDF builders in scripts/pitch/
+
+# --- tests
+pytest
+
+-e .

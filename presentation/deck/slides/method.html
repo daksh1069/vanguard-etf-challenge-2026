@@ -1,0 +1,30 @@
+<section id="method">
+<p class="eyebrow">The evidence</p>
+<h2 class="title">We rebuilt the fund from real market prices</h2>
+<div class="body">
+<!-- nodes: I1 0,0,380,160  I2 428,0,380,160  I3 856,0,380,160  I4 1284,0,380,160  M 382,232,900,150  O 182,440,1300,80 ; join bus y 196 -->
+<div style="position:relative; width:1664px; height:520px">
+<div class="node" style="left:0px; top:0px; width:380px; height:160px"><p class="nt">ISHG’s real returns</p><p class="nx">Unhedged 1–3y non-US government bonds</p></div>
+<div class="node" style="left:428px; top:0px; width:380px; height:160px"><p class="nt">Spot FX rates</p><p class="nx">Bloomberg for majors, Yahoo for the rest</p></div>
+<div class="node key" style="left:856px; top:0px; width:380px; height:160px"><p class="nt">Real 1M forwards</p><p class="nx">Bloomberg: 5 majors, 81% of the fund</p></div>
+<div class="node" style="left:1284px; top:0px; width:380px; height:160px"><p class="nt">Rate gaps</p><p class="nx">FRED/OECD: 7 smaller currencies</p></div>
+<div class="node key" style="left:382px; top:232px; width:900px; height:150px"><p class="nt">Hedged 1–3y series, monthly, Feb 2015 – Oct 2026</p><p class="nx">ISHG return − currency move + forward premium; fee cut from 0.35% to 0.10%</p></div>
+<div class="node" style="left:182px; top:440px; width:1300px; height:80px; justify-content:center; align-items:center"><p class="nt">Compared with real funds: VGSH, BSV, BNDX, T-bills, Irish fund</p></div>
+<x-connector x1="190" y1="160" x2="190" y2="196" head="none" style="color:#14202E; border-width:3px"></x-connector>
+<x-connector x1="618" y1="160" x2="618" y2="196" head="none" style="color:#14202E; border-width:3px"></x-connector>
+<x-connector x1="1046" y1="160" x2="1046" y2="196" head="none" style="color:#14202E; border-width:3px"></x-connector>
+<x-connector x1="1474" y1="160" x2="1474" y2="196" head="none" style="color:#14202E; border-width:3px"></x-connector>
+<x-connector x1="190" y1="196" x2="1474" y2="196" head="none" style="color:#14202E; border-width:3px"></x-connector>
+<x-connector x1="832" y1="196" x2="832" y2="232" style="color:#14202E; border-width:3px"></x-connector>
+<x-connector x1="832" y1="382" x2="832" y2="440" style="color:#14202E; border-width:3px"></x-connector>
+</div>
+</div>
+<div class="foot"><p class="src">Script: scripts/real_hedged_full.py. Currency weights: ISHG, 5 Nov 2026 (KRW left out; it joined in 2026)</p><p class="pg"></p></div>
+<aside>About 50 seconds.
+
+Now the evidence. A fund that doesn’t exist has no track record, and our early simulation turned out to understate risk by about half. So we rebuilt the fund from real market prices instead.
+
+We started with ISHG’s actual returns. ISHG holds exactly these bonds, unhedged. Then we hedged every currency: real one-month forwards from Bloomberg for the five major currencies, which are 81% of the fund, and interest-rate gaps for the seven smaller ones. We also moved the fee from ISHG’s 0.35% to our 0.10%.
+
+That gives a monthly series from February 2015 to October 2026, which we compare with real funds: VGSH, BSV, BNDX, T-bills and Vanguard’s Irish fund.</aside>
+</section>

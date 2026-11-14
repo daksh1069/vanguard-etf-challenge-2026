@@ -1,0 +1,103 @@
+/* WolfPack finals deck. Palette: ink #14202E, paper #F7F5F0, paper-2 #ECE7DD, body #46505C, muted #5C6470,
+   accent red #B3122B, our-fund blue #1F5FA8, coral on dark #F2A391. Type scale: 112 / 64 / 40 / 28 / 24. */
+
+section {
+  counter-increment: page;
+  background: #F7F5F0;
+  color: #14202E;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 28px;
+  line-height: 1.35;
+  padding: 128px 128px 160px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes rise { from { opacity: 0; transform: translateY(16px); } }
+
+.eyebrow { font-size: 24px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #B3122B; line-height: 1.3; }
+.title { font-family: 'Source Serif 4', Georgia, serif; font-size: 64px; font-weight: 600; line-height: 1.1; letter-spacing: -0.5px; color: #14202E; margin-top: 12px; }
+h3 { font-size: 28px; font-weight: 600; line-height: 1.2; color: #14202E; }
+
+.body { margin-top: 48px; display: flex; gap: 32px; animation: rise 500ms ease-out 120ms both; }
+.stack { flex-direction: column; gap: 40px; }
+.col { display: flex; flex-direction: column; gap: 24px; }
+
+.card { background: #FFFDF8; border: 1px solid #E2DCD0; border-radius: 12px; padding: 32px; display: flex; flex-direction: column; gap: 8px; box-sizing: border-box; }
+.soft { background: #ECE7DD; border: 1px solid #ECE7DD; }
+.txt { font-size: 24px; line-height: 1.35; color: #46505C; }
+.label { font-size: 24px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #5C6470; line-height: 1.3; }
+.num { font-family: 'Source Serif 4', Georgia, serif; font-size: 64px; font-weight: 600; line-height: 1.1; color: #14202E; font-variant-numeric: tabular-nums; }
+.ours { color: #1F5FA8; }
+.note { font-size: 28px; line-height: 1.35; color: #46505C; }
+.icon { width: 48px; height: 48px; color: #1F5FA8; }
+
+/* footer band */
+.foot { position: absolute; left: 128px; bottom: 64px; width: 1664px; display: flex; justify-content: space-between; align-items: flex-end; gap: 48px; }
+.src { font-size: 24px; line-height: 1.3; color: #5C6470; }
+.pg { font-size: 24px; line-height: 1.3; font-weight: 600; color: #5C6470; }
+.pg::before { content: counter(page); }
+
+/* dark and accent slides */
+.dark { background: #14202E; color: #F7F5F0; }
+.dark .eyebrow { color: #F2A391; }
+.dark .title { color: #F7F5F0; }
+.dark .txt { color: #BAC4D0; }
+.dark .src { color: #9AA6B4; }
+.dark .pg { color: #9AA6B4; }
+.accent { background: #B3122B; color: #F7F5F0; justify-content: center; }
+.accent .eyebrow { color: #FBD9D0; }
+.accent .src { color: #FBD9D0; }
+.accent .pg { color: #FBD9D0; }
+.backup { background: #ECE7DD; }
+.backup .card { background: #F7F5F0; }
+
+/* cover */
+.cover { justify-content: center; padding: 128px; }
+.bar { width: 120px; height: 8px; background: #F2A391; margin-bottom: 32px; }
+.cover-title { font-family: 'Source Serif 4', Georgia, serif; font-size: 112px; font-weight: 600; line-height: 1.05; letter-spacing: -1.5px; color: #F7F5F0; margin-top: 24px; }
+.cover-sub { font-size: 40px; line-height: 1.25; color: #F2A391; margin-top: 24px; }
+.cover-line { font-size: 28px; line-height: 1.35; color: #BAC4D0; margin-top: 40px; width: 1240px; }
+
+/* hook */
+.big { font-family: 'Source Serif 4', Georgia, serif; font-size: 112px; font-weight: 600; line-height: 1.05; letter-spacing: -2px; color: #F7F5F0; }
+.statement { font-family: 'Source Serif 4', Georgia, serif; font-size: 40px; font-weight: 400; line-height: 1.25; color: #F7F5F0; }
+.hook-row { display: flex; gap: 120px; margin-top: 56px; }
+.hook-item { display: flex; flex-direction: column; gap: 12px; width: 640px; animation: rise 500ms ease-out 100ms both; }
+.d2 { animation-delay: 400ms; }
+.hook-cap { font-size: 28px; line-height: 1.35; color: #FBD9D0; }
+
+/* the gap two-by-two */
+.gapgrid { display: grid; grid-template-columns: 300px 1fr 1fr; gap: 16px; }
+.colhead { font-size: 24px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #5C6470; line-height: 1.3; padding: 0 8px; }
+.rowhead { font-family: 'Source Serif 4', Georgia, serif; font-size: 40px; font-weight: 600; line-height: 1.1; color: #14202E; align-self: center; }
+.cell { background: #FFFDF8; border: 1px solid #E2DCD0; border-radius: 12px; padding: 32px; display: flex; flex-direction: column; gap: 8px; justify-content: center; }
+.empty { background: #FBEDEA; border: 3px dashed #B3122B; }
+.fund { font-size: 28px; line-height: 1.35; color: #14202E; }
+.redword { font-family: 'Source Serif 4', Georgia, serif; font-size: 64px; font-weight: 600; line-height: 1.1; color: #B3122B; }
+
+/* diagrams */
+.node { position: absolute; box-sizing: border-box; background: #FFFDF8; border: 2px solid #14202E; border-radius: 12px; padding: 20px 24px; display: flex; flex-direction: column; gap: 6px; }
+.key { border-color: #1F5FA8; background: #EEF3FA; }
+.nt { font-size: 28px; font-weight: 600; line-height: 1.2; color: #14202E; }
+.nx { font-size: 24px; line-height: 1.35; color: #46505C; }
+.looplabel { position: absolute; font-size: 24px; font-weight: 600; line-height: 34px; color: #1F5FA8; text-align: center; }
+.eq { background: #ECE7DD; border-left: 8px solid #1F5FA8; border-radius: 12px; padding: 28px 36px; display: flex; flex-direction: column; gap: 8px; }
+.eqline { font-family: 'Source Serif 4', Georgia, serif; font-size: 40px; line-height: 1.25; color: #14202E; }
+
+/* stats, tiles, pillars */
+.stat { border-top: 2px solid #D9D4CA; padding-top: 16px; display: flex; flex-direction: column; gap: 8px; }
+.tiles { display: flex; gap: 24px; margin-top: 16px; }
+.tile { flex: 1; background: #FFFDF8; border: 1px solid #E2DCD0; border-radius: 12px; padding: 28px; display: flex; flex-direction: column; gap: 8px; }
+.pillars { display: flex; gap: 32px; }
+.pillar { flex: 1; border-top: 2px solid #F2A391; padding-top: 20px; display: flex; flex-direction: column; gap: 8px; }
+.pn { font-family: 'Source Serif 4', Georgia, serif; font-size: 40px; font-weight: 600; line-height: 1.25; color: #F7F5F0; }
+.thanks { font-size: 40px; font-weight: 600; line-height: 1.25; color: #F2A391; margin-top: 40px; }
+
+/* tables */
+.t { font-size: 24px; line-height: 1.3; color: #14202E; width: 100%; }
+.t28 { font-size: 28px; }
+.thead { background: #ECE7DD; }
+.hl { background: #E3ECF7; }
+.backup .thead { background: #DDD6C9; }

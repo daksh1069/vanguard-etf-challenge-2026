@@ -1,0 +1,24 @@
+severity,check,ticker,detail
+WARN,adj_reconcile,MGV,adj-vs-raw total return differs by 5.4 bp on 2020-03-26
+WARN,adj_reconcile,VDE,adj-vs-raw total return differs by 5.9 bp on 2022-09-28
+WARN,adj_reconcile,VNQI,adj-vs-raw total return differs by 6.6 bp on 2024-12-20
+WARN,adj_reconcile,VTV,adj-vs-raw total return differs by 5.7 bp on 2020-03-26
+WARN,insufficient_history,BNDP,233 obs (< 500); inception 2025-12-02 - proxy or exclude from covariance
+WARN,insufficient_history,VBIL,437 obs (< 500); inception 2025-02-07 - proxy or exclude from covariance
+WARN,insufficient_history,VCHY,109 obs (< 500); inception 2026-06-02 - proxy or exclude from covariance
+WARN,insufficient_history,VDG,143 obs (< 500); inception 2026-04-14 - proxy or exclude from covariance
+WARN,insufficient_history,VDIG,244 obs (< 500); inception 2025-11-14 - proxy or exclude from covariance
+WARN,insufficient_history,VDV,143 obs (< 500); inception 2026-04-14 - proxy or exclude from covariance
+WARN,insufficient_history,VEXC,277 obs (< 500); inception 2025-09-30 - proxy or exclude from covariance
+WARN,insufficient_history,VGHY,288 obs (< 500); inception 2025-09-16 - proxy or exclude from covariance
+WARN,insufficient_history,VGMS,355 obs (< 500); inception 2025-06-09 - proxy or exclude from covariance
+WARN,insufficient_history,VGUS,437 obs (< 500); inception 2025-02-07 - proxy or exclude from covariance
+WARN,insufficient_history,VGVT,337 obs (< 500); inception 2025-07-07 - proxy or exclude from covariance
+WARN,insufficient_history,VSDB,402 obs (< 500); inception 2025-04-01 - proxy or exclude from covariance
+WARN,insufficient_history,VTG,336 obs (< 500); inception 2025-07-07 - proxy or exclude from covariance
+WARN,insufficient_history,VTP,336 obs (< 500); inception 2025-07-07 - proxy or exclude from covariance
+WARN,insufficient_history,VUSG,244 obs (< 500); inception 2025-11-14 - proxy or exclude from covariance
+WARN,insufficient_history,VUSV,244 obs (< 500); inception 2025-11-14 - proxy or exclude from covariance
+WARN,real_yield,VTIP,publishes a REAL yield (2.26%); needs an inflation add-on before entering a nominal expected-return vector
+WARN,real_yield,VTP,publishes a REAL yield (2.50%); needs an inflation add-on before entering a nominal expected-return vector
+INFO,yield_asof_spread,-,"SEC yield as-of dates: ['2026-10-31', '2026-11-04', '2026-11-05']"

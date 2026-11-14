@@ -1,0 +1,20 @@
+# --- environment and tooling
+.venv/
+.env
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+
+# --- data
+# Raw Vanguard feed pulls and the Yahoo price cache are large and re-fetchable by the pipeline.
+data/raw/*
+!data/raw/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
+# Licensed or third-party material (Bloomberg extracts, organizer exports of other teams' accounts,
+# saved web pages). Kept locally only; see data/private/README.md for what goes here.
+data/private/*
+!data/private/README.md
